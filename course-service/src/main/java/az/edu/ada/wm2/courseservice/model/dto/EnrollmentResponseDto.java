@@ -21,6 +21,9 @@ public class EnrollmentResponseDto {
     @Schema(description = "Student id", example = "15")
     private Long studentId;
 
+    @Schema(description = "Enrollment date", example = "2026-05-19")
+    private java.time.LocalDate enrollmentDate;
+
     @Schema(description = "Operation result message", example = "Student enrolled successfully.")
     private String message;
 }

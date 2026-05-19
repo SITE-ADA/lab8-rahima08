@@ -29,6 +29,8 @@ public class Enrollment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private java.time.LocalDate enrollmentDate;
+
     @Column(name = "course_id", nullable = false)
     private Long courseId;
 
